@@ -1,0 +1,297 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+}
+.container {
+  width: 100%;
+}
+
+.header-container {
+  width: 100%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+.main__banner-1 {
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+.main__products {
+  grid-column: 1/5;
+  grid-row: 2/3;
+}
+.main__poster-1 {
+  grid-column: 1/5;
+  grid-row: 3/4;
+}
+.main__testimonials {
+  grid-column: 1/5;
+  grid-row: 4/5;
+}
+.main__banner-2 {
+  grid-column: 1/5;
+  grid-row: 5/6;
+}
+.main__product-info {
+  grid-column: 1/5;
+  grid-row: 6/7;
+}
+.main__banner-3 {
+  grid-column: 1/5;
+  grid-row: 7/8;
+}
+.main__poster-2 {
+  grid-column: 1/5;
+  grid-row: 8/9;
+}
+.main__cta {
+  grid-column: 1/5;
+  grid-row: 9/10;
+}
+.main__gallery {
+  grid-column: 1/5;
+  grid-row: 10/11;
+}
+
+/* Banner 1 */
+.main__banner-1 {
+  display: flex;
+}
+.banner-1__img-container {
+  width: 50%;
+}
+.banner-1__img {
+  width: 100%;
+  height: 100%;
+}
+.banner-1__details {
+  position: relative;
+  width: 50%;
+  background-color: #fffbf7;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.banner-1__details-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+.banner-1__details-p {
+  z-index: 10;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+  margin-bottom: 4vh;
+}
+.banner-1__details-heading {
+  z-index: 10;
+  font-size: 7.5rem;
+  line-height: 6.4rem;
+  font-weight: 700;
+  font-family: "Philosopher", sans-serif;
+  text-align: center;
+  width: 80%;
+  margin-bottom: 2vh;
+}
+.banner-1__details-cta {
+  z-index: 10;
+  color: #000000;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+
+  text-decoration: none;
+  border-bottom: 1px solid #000000;
+}
+
+/* Main Products */
+.main__products {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5vh 0;
+  font-style: "Philosopher", sans-serif;
+}
+.main__products-heading-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.main__products-icon-forward {
+  display: none;
+}
+.main__products-icon-back {
+  display: none;
+}
+.main__products-heading {
+  font-size: 7rem;
+  font-weight: 700;
+  line-height: 6.4rem;
+  font-family: "Philosopher", sans-serif;
+  margin: 3vh 0;
+}
+.main__products-container {
+  display: flex;
+  width: 100%;
+}
+.main__products-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 25%;
+  padding: 0 2rem;
+}
+.main__products-details {
+}
+.main__products-title {
+  font-size: 2.7rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+.main__products-p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 170%;
+  margin-bottom: 1rem;
+}
+.main__products-link {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  text-transform: uppercase;
+}
+.main__products-link:hover {
+  color: #bb6b1e;
+  border-bottom: 1px solid #bb6b1e;
+}
+
+/* Poster 1 */
+.main__poster-1 {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50rem;
+  background-image: url("./../public/images/espresso.png");
+  background-position: center;
+  background-size: cover;
+}
+.poster-1__top {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  margin-bottom: 5rem;
+}
+.poster-1__heading {
+  width: 60%;
+  text-align: center;
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 8rem;
+  line-height: 8rem;
+  margin-bottom: 3rem;
+}
+.poster-1__cta {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid #fff;
+
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+}
+
+/* Main Testimonials */
+.main__testimonials {
+  padding: 3vh 2vw;
+  width: 100%;
+  background-color: #fffbf6;
+}
+.testimonials-cell {
+  width: 33%;
+  margin-right: 2rem;
+  border-radius: 0.5rem;
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* position dots in gallery */
+.flickity-page-dots {
+  bottom: 0px;
+}
+/* white circles */
+.flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.1);
+}
+/* fill-in selected dot */
+.flickity-page-dots .dot.is-selected {
+  background: #bb6b1e;
+}
+
+.testimonials-cell__str {
+  width: 2rem;
+}
+.testimonials-cell__p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 170%;
+  margin: 2rem 0;
+}
+.testimonials-cell__logo {
+  margin-top: 3rem;
+  width: 10rem;
+}
+
+.footer {
+  height: 100rem;
+}
+@media only screen and (min-width: 1920px) {
+  html {
+    width: 100vw;
+  }
+  .container {
+    width: 192rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
